@@ -4,8 +4,5 @@ Weather forecast app for different cities of russia.
 
 ## Description
 
-Viewing the real-time weather forecast.
+Search and view the weather in any city in the world.
 
-## Available cities
-
-### 1.Saint Petersburg
