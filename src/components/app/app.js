@@ -21,7 +21,10 @@ class App extends Component {
       <div className="container">
         <MenuBar onWeatherSearch={this.onWeatherSearch} />
         <WeatherCastCard cityName={this.state.searchWeather} />
-        <div className="bottom">Прогноз погоды взят с OpenWeather</div>
+        <div className="bottom">
+          Прогноз погоды взят с{" "}
+          <a href="https://openweathermap.org/">OpenWeather</a>
+        </div>
       </div>
     );
   }

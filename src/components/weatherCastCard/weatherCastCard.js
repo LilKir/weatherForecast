@@ -39,18 +39,22 @@ class WeatherCastCard extends Component {
     this.setState({ loading: false, error: true });
   };
 
+  onErrorFalse = () => {
+    this.setState({ error: false });
+  };
+
   updateWeather = () => {
     const city = this.props.cityName;
-    // console.dir(city);
+
     this.onWeatherLoading();
     this.weatherService
       .getWeather(city)
       .then(this.onWeatherLoaded)
+      .then(this.onErrorFalse)
       .catch(this.onError);
   };
 
   render() {
-    // console.log("render");
     const { weather, loading, error } = this.state;
     const errorMessage = error ? <ErrorMessage /> : null;
     const spinner = loading ? <Spinner /> : null;

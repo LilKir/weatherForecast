@@ -1,18 +1,28 @@
-import img from "./error.gif";
+// import img from "./error.gif";
 
 const ErrorMessage = () => {
   return (
-    <img
+    <div
+      className="error"
       style={{
-        display: "block",
-        width: "250px",
-        height: "250px",
-        objectFit: "contain",
+        fontSize: "25px",
         margin: "0 auto",
       }}
-      scr={img}
-      alt="Error"
-    />
+    >
+      Данный город не найден. Попробуй ещё раз.
+    </div>
+    // Не отображается картинка. ХЗ что делать.
+    // <img
+    //   style={{
+    //     display: "block",
+    //     width: "250px",
+    //     height: "250px",
+    //     objectFit: "contain",
+    //     margin: "0 auto",
+    //   }}
+    //   scr={process.env.PUBLIC_URL + "/error.gif"}
+    //   alt="Error"
+    // />
   );
 };
 
