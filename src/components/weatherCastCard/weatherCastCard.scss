@@ -1,0 +1,32 @@
+.card {
+  margin-top: 20px;
+  padding: 25px;
+  max-width: 100%;
+  background: linear-gradient(#ff5f5f, #0084ffdf);
+  // background: linear-gradient(#63faff, #ff8f8f);
+  border-radius: 25px;
+  border: 0px solid white;
+  color: white;
+}
+
+// #63faff
+
+.temp {
+  font-size: 40px;
+}
+
+img {
+  margin-top: 5px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.temp-min {
+  margin-right: 40px;
+}
