@@ -41,7 +41,7 @@ jobs:
           echo "Full: https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry"
           echo "TL;DR"
           echo "Create a token (PAT)- https://github.com/settings/tokens"
-          echo "CR_PAT=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"
+          echo "CR_PAT=<YOUR_TOKEN(PAT)>"
           echo "echo \$CR_PAT | docker login ghcr.io -u lilkir --password-stdin"
           echo "docker pull ghcr.io/lilkir/weatherforecast:v0.1.0"
           echo "docker run -p 4701:3000 ghcr.io/lilkir/weatherforecast:v0.1.0"
