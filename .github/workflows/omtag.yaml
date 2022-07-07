@@ -42,9 +42,9 @@ jobs:
           echo "TL;DR"
           echo "Create a token (PAT)- https://github.com/settings/tokens"
           echo "CR_PAT=<YOUR_TOKEN(PAT)>"
-          echo "echo \$CR_PAT | docker login ghcr.io -u ${{ github.actor }} --password-stdin"
-          echo "docker pull ghcr.io/${{ env.ACTOR }}/${{ env.REPONAME }}:${{ env.VERSION }}"
-          echo "docker run -p 4701:3000 ghcr.io/${{ env.ACTOR }}/${{ env.REPONAME }}:${{ env.VERSION }}"
+          echo "echo \$CR_PAT | docker login ghcr.io -u lilkir --password-stdin"
+          echo "docker pull ghcr.io/lilkir/weatherforecast:v0.1.0"
+          echo "docker run -p 4701:3000 ghcr.io/lilkir/weatherforecast:v0.1.0"
 
   build-dockerhub:
     runs-on: ubuntu-latest
@@ -87,6 +87,6 @@ jobs:
           echo "Full: --"
           echo "TL;DR"
           echo "Get TOKEN - https://hub.docker.com/settings/security"
-          echo "docker login -u ${{ env.ACTOR }}"
-          echo "docker pull ${{ env.ACTOR }}/${{ env.REPONAME }}:${{ env.VERSION }}"
-          echo "docker run -p 4701:3000 ${{ env.ACTOR }}/${{ env.REPONAME }}:${{ env.VERSION }}"
+          echo "docker login -u lilkir"
+          echo "docker pull lilkir/weatherforecast:v0.1.0"
+          echo "docker run -p 4701:3000 lilkir/weatherforecast:v0.1.0"
