@@ -18,7 +18,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-xl">
         <MenuBar onWeatherSearch={this.onWeatherSearch} />
         <WeatherCastCard cityName={this.state.searchWeather} />
         <div className="bottom">
