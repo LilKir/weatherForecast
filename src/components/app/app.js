@@ -18,13 +18,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-xl">
+      <div className="container">
         <MenuBar onWeatherSearch={this.onWeatherSearch} />
         <WeatherCastCard cityName={this.state.searchWeather} />
         <div className="bottom">
           Прогноз погоды предоставлен сервисом{" "}
           <a href="https://openweathermap.org/">OpenWeather</a>
         </div>
+        <div className="version">v.0.1.10</div>
       </div>
     );
   }
