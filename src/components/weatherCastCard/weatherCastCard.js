@@ -71,7 +71,8 @@ class WeatherCastCard extends Component {
 }
 
 const View = ({ weather }) => {
-  const { name, temp, description, temp_max, temp_min, icon } = weather;
+  const { name, temp, feels_like, description, temp_max, temp_min, icon } =
+    weather;
 
   return (
     <>
@@ -81,6 +82,7 @@ const View = ({ weather }) => {
         <img className="img-weather" src={icon} alt={icon} />
       </div>
       <div className="description">{description}</div>
+      <div className="feels_like">По ощущениям: {feels_like}</div>
       <div className="temp-max-min d-flex">
         <div className="temp-min">Минимальная температура: {temp_min}</div>
         <div className="temp-max">Максимальная температура: {temp_max}</div>

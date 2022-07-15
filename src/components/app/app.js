@@ -22,7 +22,7 @@ class App extends Component {
         <MenuBar onWeatherSearch={this.onWeatherSearch} />
         <WeatherCastCard cityName={this.state.searchWeather} />
         <div className="bottom">
-          Прогноз погоды взят с{" "}
+          Прогноз погоды предоставлен сервисом{" "}
           <a href="https://openweathermap.org/">OpenWeather</a>
         </div>
       </div>

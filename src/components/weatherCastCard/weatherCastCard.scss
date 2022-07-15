@@ -3,13 +3,10 @@
   padding: 25px;
   max-width: 100%;
   background: linear-gradient(#ff5f5f, #0084ffdf);
-  // background: linear-gradient(#63faff, #ff8f8f);
   border-radius: 25px;
   border: 0px solid white;
   color: white;
 }
-
-// #63faff
 
 .temp {
   font-size: 40px;
@@ -23,8 +20,13 @@ img {
 }
 
 .description {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.feels_like {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .temp-min {
