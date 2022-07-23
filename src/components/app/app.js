@@ -4,6 +4,7 @@ import MenuBar from "../menuBar/menuBar";
 import WeatherCastCard from "../weatherCastCard/weatherCastCard";
 
 import "./app.scss";
+import packageJson from '../package.json';
 
 class App extends Component {
   state = {
@@ -25,7 +26,7 @@ class App extends Component {
           Прогноз погоды предоставлен сервисом{" "}
           <a href="https://openweathermap.org/">OpenWeather</a>
         </div>
-        <div className="version">v.0.1.10</div>
+        <div className="version">{packageJson.version}</div>
       </div>
     );
   }
