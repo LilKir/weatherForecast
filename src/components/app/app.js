@@ -4,7 +4,7 @@ import MenuBar from "../menuBar/menuBar";
 import WeatherCastCard from "../weatherCastCard/weatherCastCard";
 
 import "./app.scss";
-import packageJson from '../package.json';
+import packageJson from '../../../package.json';
 
 class App extends Component {
   state = {
